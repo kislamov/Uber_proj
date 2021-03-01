@@ -144,6 +144,9 @@ nav
 	&_white 
 		background-color: #fff
 		color: #000
+		&_sm
+			width: 75px
+			height: 25px
 
 .title
 	position: relative
@@ -336,4 +339,79 @@ nav
 			li
 				&:before
 					background: url('../icons/check_red.svg') center center/cover no-repeat
-// #sourceMappingURL=style.css.map 
+
+
+.world
+	position: relative
+	min-height: 720px
+	padding: 48px 0 21px 0
+	background: url('../img/bg/map.jpg') center (center/cover) no-repeat
+	&_full
+		position: absolute
+		left: 50%
+		bottom: 21px
+		transform: translateX(-50%)
+		color: #1FBAD6
+		font-weight: 400px
+		font-size: 15px
+		text-transform: uppercase
+		
+.footer
+	position: relative
+	min-height: 154px
+	padding: 14px 0 31px 0
+	&_social
+		width: 156px
+		height: 35px
+		position: absolute
+		top: 48px
+		left: 23px
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		&_round
+			width: 35px
+			height: 35px
+			background-color: #070716
+			border-radius: 100%
+			img
+				display: block
+				margin: 10px auto
+	&_line
+		width: 301px
+		height: 5px
+		background-color: $main-color
+		margin: 0 auto
+	&_market
+		position: absolute
+		top: 51px
+		right: 21px
+	&_nav
+		display: flex
+		width: 365px
+		justify-content: space-between
+		margin: 0 auto
+		margin-top: 32px
+		a
+			font-weight: 300
+			font-size: 15px
+			color: #070716
+			text-transform: uppercase
+	&_subnav
+		width: 390px
+		display: flex
+		justify-content: space-between
+		margin: 0 auto
+		margin-top: 16px
+		a 
+			font-weight: 300
+			font-size: 11px
+			color: #999999
+			text-transform: uppercase
+	&_lang
+		text-align: center
+		margin-top: 22px
+		font-weight: 300
+		font-size: 11px
+		text-transform: uppercase
+		color: #1FBAD6
